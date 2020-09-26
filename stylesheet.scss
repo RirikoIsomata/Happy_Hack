@@ -1,0 +1,342 @@
+// color
+$yellow: #FFBF00;
+$blue: #3D5CDB;
+$gray: rgba(#BAD5F5,0.3);
+$black: #333;
+$white: #fff;
+
+@font-face {
+    font-family: 'Futura';
+    src: url('/fonts/Futura-Med.ttf');
+}
+@font-face {
+    font-family: 'FuturaLight';
+    src: url('/fonts/Futura-Lig.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin button($color) {
+    
+    height: 16px;
+    width: 170px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: $color;
+    color: $white;
+    text-decoration: none;
+    
+    &:hover{
+        box-shadow: 0 0 8px gray;
+    }
+}
+
+//top
+.top-wrapper{
+    width: 100vw;
+    height: 797px;
+    background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    position: relative;
+    //header
+    .header{
+        //z-index: 2;
+        position: absolute;
+        top: 36px;
+        right: 34px;
+        float: right;
+        li{
+            font-family: 'Futura';
+            font-size: 26px;
+            list-style: none;
+            float: right;
+            margin-right: 32px;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+            &:visited{
+                color: $white;
+            }
+            &:hover{
+                color:$blue;
+            }
+        }
+    }
+    img{
+        width: 902px;
+        height: 238px;
+        position: absolute;
+        top: 180px;
+    }
+    h2{
+        font-family: 'Futura';
+        font-weight: 3px;
+        font-size: 45px;
+        color: $white;
+        position: absolute;
+        top: 460px;
+        
+    }
+}
+
+h3{
+    text-align: center;
+    font-family: 'FutaraLig';
+    font-size: 40px;
+    color: $blue;
+    margin-top: 55px;
+}
+
+//introduction
+.introduction-wrapper{
+    width: 100vw;
+    height: 968px;
+    .contents{
+        width: 1040px;
+        height: 760px;
+        padding: 75px 0;
+        margin: 0 auto;
+        .top{
+            height: 340px;
+            margin-bottom: 90px;
+            p{
+            line-height: 32px;
+            margin-bottom: 40px;
+            letter-spacing: -0.8px;
+            }       
+            a{  
+                display: block;
+                @include button($blue);
+                font-size: 18px;
+                line-height: 78%;
+                font-family: "Hiragino Kaku Gothic Pro W6";
+                letter-spacing: 0.7px;
+            }
+        }
+        .buttom{
+            p{
+            line-height: 31px;
+            letter-spacing: -1.6px;
+            margin-bottom: 40px;
+            }
+            a{
+                display: block;
+                @include button($yellow);
+                font-size: 18px;
+                line-height: 78%;
+                font-family: "Hiragino Kaku Gothic Pro W6";
+                letter-spacing: 0.7px;
+            }
+        }
+        .sentence{
+            width: 400px;
+            font-family: "Hiragino Kaku Gothic Pro W3";
+            font-size: 16px;
+            
+            color: $black;
+            padding: 22px 68px;
+        }
+        .float-left{
+            float: left;
+        }
+        
+    }
+}
+
+//courses
+.courses-wrapper{
+    width: 100vw;
+    height: 942px;
+    #particles-js{
+        width: 100%;
+        height: 100%;
+        background-color: #d5e5f8;
+    
+    .contents{
+        z-index: 5;
+    }    
+    .upside-contents{
+        width: 1040px;
+        margin: 0 auto;
+        padding: 76px 0 30px;
+        display: flex;
+        flex-wrap: wrap;
+        .upside{
+            flex: 0 0 auto;
+            margin: 0 10px;
+        }
+    }
+    .downside-contents{
+        width: 780px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .downside{
+            flex: 0 0 auto;
+            margin: 0 10px;
+        }
+    }
+    .course{
+        width: 180px;
+        height: 280px;
+        padding: 30px;
+        border-radius: 12px;
+        background-color: $white;
+        position: relative;
+        display: inline-block;
+        z-index: 2;
+        img{
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            //padding-bottom: 40px;
+        }
+        h4{ 
+            
+            font-family: "Hiragino Kaku Gothic Pro W6";
+            font-size: 15px;
+            color: $black;
+            text-align: center;
+            //margin-top: 40px;
+            //margin-bottom: 15px;
+        }
+        a{
+            display: block;
+            font-weight: lighter;
+            font-size: 13px;
+            letter-spacing: 0px;
+            position: absolute;
+            bottom: 45px;
+        }
+    }
+    .html {
+        h4{
+            margin-top: 40px;
+        }
+        a{
+        @include button(#F1662A);
+        margin-top: 30px;
+        }
+    }
+    .css {
+        h4{
+            margin-top: 30px;
+        }
+        a{
+        @include button(#29a9e0);
+        margin-top: 15px;
+        }
+    }
+    .unity {
+        h4{
+            margin-top: 50px;
+        }
+        a{
+        @include button(#333);
+        margin-top: 15px;
+        }
+        img{
+            margin-top: 30px;
+        }
+    }
+    .ruby {
+        h4{
+            margin-top: 60px;
+        }
+        a{
+        @include button(#FE5252);
+        margin-top: 15px;
+        }
+        img{
+            margin-top: 20px;
+        }
+    }
+    .js {
+        h4{
+            margin-top: 30px;
+        }
+        a{
+        @include button(#FCD705);
+        margin-top: 15px;
+        }
+    }
+    .swift {
+        h4{
+            margin-top: 60px;
+        }
+        a{
+        @include button(#FE7636);
+        margin-top: 15px;
+        }
+        img{
+            margin-top: 20px;
+        }
+    }
+    .go {
+        h4{
+        margin-top: 50px;
+        }
+        a{
+        @include button(#73CEDD);
+        margin-top: 15px;
+        }
+        img{
+        margin-top: 20px;
+        }
+    }
+}
+}
+
+//images
+.images-wrapper{
+    width: 100vw;
+    height: 450px;
+    .slider{
+        margin: 100px auto;
+        width: 80%;
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+   
+    /*slick setting*/
+    .slick-prev:before,
+    .slick-next:before {
+        color: #000;
+    }
+    
+}
+
+//access
+.access-wrapper{
+    width: 100vw;
+    height: 568px;
+    h3{
+        margin-bottom: 57px;
+    }
+    .map{
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+//footer
+footer{
+    font-family: 'Futura';
+    font-size: 18px;
+    text-align: center;
+    color: $blue;
+    padding: 20px 0;
+}
