@@ -174,19 +174,20 @@ h3 {
 .courses-wrapper {
   width: 100vw;
   height: 942px;
+  position: relative;
+  padding-top: 0.5px;
 }
 
 .courses-wrapper #particles-js {
   width: 100%;
   height: 100%;
   background-color: #d5e5f8;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
 }
 
-.courses-wrapper #particles-js .contents {
-  z-index: 5;
-}
-
-.courses-wrapper #particles-js .upside-contents {
+.courses-wrapper .upside-contents {
   width: 1040px;
   margin: 0 auto;
   padding: 76px 0 30px;
@@ -197,14 +198,14 @@ h3 {
       flex-wrap: wrap;
 }
 
-.courses-wrapper #particles-js .upside-contents .upside {
+.courses-wrapper .upside-contents .upside {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   margin: 0 10px;
 }
 
-.courses-wrapper #particles-js .downside-contents {
+.courses-wrapper .downside-contents {
   width: 780px;
   margin: 0 auto;
   display: -webkit-box;
@@ -214,14 +215,14 @@ h3 {
       flex-wrap: wrap;
 }
 
-.courses-wrapper #particles-js .downside-contents .downside {
+.courses-wrapper .downside-contents .downside {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   margin: 0 10px;
 }
 
-.courses-wrapper #particles-js .course {
+.courses-wrapper .course {
   width: 180px;
   height: 280px;
   padding: 30px;
@@ -232,21 +233,21 @@ h3 {
   z-index: 2;
 }
 
-.courses-wrapper #particles-js .course img {
+.courses-wrapper .course img {
   width: 100px;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
-.courses-wrapper #particles-js .course h4 {
+.courses-wrapper .course h4 {
   font-family: "Hiragino Kaku Gothic Pro W6";
   font-size: 15px;
   color: #333;
   text-align: center;
 }
 
-.courses-wrapper #particles-js .course a {
+.courses-wrapper .course a {
   display: block;
   font-weight: lighter;
   font-size: 13px;
@@ -255,11 +256,11 @@ h3 {
   bottom: 45px;
 }
 
-.courses-wrapper #particles-js .html h4 {
+.courses-wrapper .html h4 {
   margin-top: 40px;
 }
 
-.courses-wrapper #particles-js .html a {
+.courses-wrapper .html a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -274,16 +275,16 @@ h3 {
   margin-top: 30px;
 }
 
-.courses-wrapper #particles-js .html a:hover {
+.courses-wrapper .html a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .css h4 {
+.courses-wrapper .css h4 {
   margin-top: 30px;
 }
 
-.courses-wrapper #particles-js .css a {
+.courses-wrapper .css a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -298,16 +299,16 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .css a:hover {
+.courses-wrapper .css a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .unity h4 {
+.courses-wrapper .unity h4 {
   margin-top: 50px;
 }
 
-.courses-wrapper #particles-js .unity a {
+.courses-wrapper .unity a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -322,20 +323,20 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .unity a:hover {
+.courses-wrapper .unity a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .unity img {
+.courses-wrapper .unity img {
   margin-top: 30px;
 }
 
-.courses-wrapper #particles-js .ruby h4 {
+.courses-wrapper .ruby h4 {
   margin-top: 60px;
 }
 
-.courses-wrapper #particles-js .ruby a {
+.courses-wrapper .ruby a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -350,20 +351,20 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .ruby a:hover {
+.courses-wrapper .ruby a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .ruby img {
+.courses-wrapper .ruby img {
   margin-top: 20px;
 }
 
-.courses-wrapper #particles-js .js h4 {
+.courses-wrapper .js h4 {
   margin-top: 30px;
 }
 
-.courses-wrapper #particles-js .js a {
+.courses-wrapper .js a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -378,16 +379,16 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .js a:hover {
+.courses-wrapper .js a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .swift h4 {
+.courses-wrapper .swift h4 {
   margin-top: 60px;
 }
 
-.courses-wrapper #particles-js .swift a {
+.courses-wrapper .swift a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -402,20 +403,20 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .swift a:hover {
+.courses-wrapper .swift a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .swift img {
+.courses-wrapper .swift img {
   margin-top: 20px;
 }
 
-.courses-wrapper #particles-js .go h4 {
+.courses-wrapper .go h4 {
   margin-top: 50px;
 }
 
-.courses-wrapper #particles-js .go a {
+.courses-wrapper .go a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -430,12 +431,12 @@ h3 {
   margin-top: 15px;
 }
 
-.courses-wrapper #particles-js .go a:hover {
+.courses-wrapper .go a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
-.courses-wrapper #particles-js .go img {
+.courses-wrapper .go img {
   margin-top: 20px;
 }
 
