@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Futura';
   src: url("/fonts/Futura-Med.ttf");
@@ -13,6 +14,7 @@
   padding: 0;
 }
 
+ふわっとアニメーション
 .fuwatAnime {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -126,6 +128,11 @@ h3 {
   height: 760px;
   padding: 75px 0;
   margin: 0 auto;
+}
+
+.introduction-wrapper .contents img {
+  width: 500px;
+  height: 333px;
 }
 
 .introduction-wrapper .contents .top {
@@ -291,7 +298,7 @@ h3 {
 }
 
 .courses-wrapper .html h4 {
-  margin-top: 40px;
+  margin-top: 25%;
 }
 
 .courses-wrapper .html a {
@@ -306,7 +313,7 @@ h3 {
   background-color: #F1662A;
   color: #fff;
   text-decoration: none;
-  margin-top: 30px;
+  margin-top: 20%;
 }
 
 .courses-wrapper .html a:hover {
@@ -315,7 +322,7 @@ h3 {
 }
 
 .courses-wrapper .css h4 {
-  margin-top: 30px;
+  margin-top: 20%;
 }
 
 .courses-wrapper .css a {
@@ -330,7 +337,7 @@ h3 {
   background-color: #29a9e0;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .css a:hover {
@@ -339,7 +346,7 @@ h3 {
 }
 
 .courses-wrapper .unity h4 {
-  margin-top: 50px;
+  margin-top: 35%;
 }
 
 .courses-wrapper .unity a {
@@ -354,7 +361,7 @@ h3 {
   background-color: #333;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .unity a:hover {
@@ -363,11 +370,11 @@ h3 {
 }
 
 .courses-wrapper .unity img {
-  margin-top: 30px;
+  margin-top: 15%;
 }
 
 .courses-wrapper .ruby h4 {
-  margin-top: 60px;
+  margin-top: 40%;
 }
 
 .courses-wrapper .ruby a {
@@ -382,7 +389,7 @@ h3 {
   background-color: #FE5252;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .ruby a:hover {
@@ -391,14 +398,14 @@ h3 {
 }
 
 .courses-wrapper .ruby img {
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
-.courses-wrapper .js h4 {
-  margin-top: 30px;
+.courses-wrapper .javascriptCourse h4 {
+  margin-top: 20%;
 }
 
-.courses-wrapper .js a {
+.courses-wrapper .javascriptCourse a {
   height: 16px;
   width: 170px;
   margin: 0 auto;
@@ -410,16 +417,16 @@ h3 {
   background-color: #FCD705;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
-.courses-wrapper .js a:hover {
+.courses-wrapper .javascriptCourse a:hover {
   -webkit-box-shadow: 0 0 8px gray;
           box-shadow: 0 0 8px gray;
 }
 
 .courses-wrapper .swift h4 {
-  margin-top: 60px;
+  margin-top: 35%;
 }
 
 .courses-wrapper .swift a {
@@ -434,7 +441,7 @@ h3 {
   background-color: #FE7636;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .swift a:hover {
@@ -443,11 +450,11 @@ h3 {
 }
 
 .courses-wrapper .swift img {
-  margin-top: 20px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .go h4 {
-  margin-top: 50px;
+  margin-top: 30%;
 }
 
 .courses-wrapper .go a {
@@ -462,7 +469,7 @@ h3 {
   background-color: #73CEDD;
   color: #fff;
   text-decoration: none;
-  margin-top: 15px;
+  margin-top: 10%;
 }
 
 .courses-wrapper .go a:hover {
@@ -471,7 +478,7 @@ h3 {
 }
 
 .courses-wrapper .go img {
-  margin-top: 20px;
+  margin-top: 15%;
 }
 
 .images-wrapper {
@@ -506,6 +513,7 @@ h3 {
 
 .access-wrapper .map {
   width: 600px;
+  height: 400px;
   margin: 0 auto;
 }
 
@@ -515,5 +523,246 @@ footer {
   text-align: center;
   color: #3D5CDB;
   padding: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+  /* ここにスマホ版のCSSを書いていくよ */
+  .top-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  .top-wrapper .header {
+    position: absolute;
+    top: 36px;
+    right: 34px;
+    float: right;
+  }
+  .top-wrapper .header nav {
+    display: none;
+  }
+  .top-wrapper img {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 40%;
+  }
+  .top-wrapper h2 {
+    font-family: 'Futura';
+    font-weight: 1px;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 55%;
+  }
+  h3 {
+    text-align: center;
+    font-family: 'FutaraLig';
+    font-size: 30px;
+    color: #3D5CDB;
+    margin-top: 55px;
+  }
+  .introduction-wrapper {
+    width: 100vw;
+    height: 200vh;
+  }
+  .introduction-wrapper .contents {
+    width: 90%;
+    margin: 0 auto;
+    clear: left;
+  }
+  .introduction-wrapper .contents .float-left {
+    float: none;
+  }
+  .introduction-wrapper .contents img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+  }
+  .introduction-wrapper .contents .top {
+    width: 100%;
+  }
+  .introduction-wrapper .contents .top .sentence {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Hiragino Kaku Gothic Pro W3";
+    font-size: 15px;
+    color: #333;
+    padding: 0px;
+  }
+  .introduction-wrapper .contents .top p {
+    line-height: 20px;
+    letter-spacing: -0.8px;
+  }
+  .introduction-wrapper .contents .top a {
+    display: block;
+    height: 16px;
+    width: 170px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #3D5CDB;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 78%;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    letter-spacing: 0.7px;
+  }
+  .introduction-wrapper .contents .top a:hover {
+    -webkit-box-shadow: 0 0 8px gray;
+            box-shadow: 0 0 8px gray;
+  }
+  .introduction-wrapper .contents .buttom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .introduction-wrapper .contents .buttom .image {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .introduction-wrapper .contents .buttom .sentence {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Hiragino Kaku Gothic Pro W3";
+    font-size: 16px;
+    color: #333;
+    padding: 0px;
+  }
+  .introduction-wrapper .contents .buttom .sentence p {
+    line-height: 20px;
+    letter-spacing: -1.6px;
+    margin-bottom: 40px;
+  }
+  .introduction-wrapper .contents .buttom .sentence a {
+    display: block;
+    height: 16px;
+    width: 170px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #FFBF00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 78%;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    letter-spacing: 0.7px;
+  }
+  .introduction-wrapper .contents .buttom .sentence a:hover {
+    -webkit-box-shadow: 0 0 8px gray;
+            box-shadow: 0 0 8px gray;
+  }
+  .courses-wrapper {
+    width: 100vw;
+    height: 220vh;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0.5px;
+  }
+  .courses-wrapper #particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: #d5e5f8;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+  }
+  .courses-wrapper .upside-contents {
+    width: 100%;
+    margin: 0 auto;
+    padding: 76px 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .courses-wrapper .upside-contents .upside {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0 10px;
+  }
+  .courses-wrapper .downside-contents {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .courses-wrapper .downside-contents .downside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin: 0 10px;
+  }
+  .courses-wrapper .course {
+    width: 25vw;
+    height: 35vh;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+    margin-bottom: 10%;
+  }
+  .courses-wrapper .course img {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .courses-wrapper .course h4 {
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+  }
+  .courses-wrapper .course a {
+    display: block;
+    width: 70%;
+    font-weight: lighter;
+    font-size: 50%;
+    letter-spacing: 0px;
+    position: absolute;
+    bottom: 45px;
+  }
+  .access-wrapper {
+    width: 100vw;
+    height: 70vh;
+  }
+  .access-wrapper .map {
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .access-wrapper .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    border: none;
+    display: block;
+  }
 }
 /*# sourceMappingURL=stylesheet.css.map */

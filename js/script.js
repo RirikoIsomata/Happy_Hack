@@ -22,13 +22,24 @@ $(function () {
         duration: 1000, // エフェクトの時間を指定します。
         easing: "linear" // エフェクトのイージングをlinear,swingから指定
     });
-    $('.slider').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        dots: true,
-        slidesToShow: 4,
-        slidesToScroll: 1
-    });
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            slidesToScroll: 1,
+            slidesToShow: 1
+        });
+    } else if (window.matchMedia('(min-width:480px)').matches) {
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            dots: true,
+            slidesToScroll: 1,
+            slidesToShow: 4
+        });
+    }
+    
 
 
 });

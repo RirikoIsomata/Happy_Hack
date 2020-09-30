@@ -38,7 +38,7 @@ $white: #fff;
     }
 }
 
-
+ふわっとアニメーション
     .fuwatAnime {
     -webkit-animation-fill-mode:both;
     -ms-animation-fill-mode:both;
@@ -72,7 +72,6 @@ $white: #fff;
     position: relative;
     //header
     .header{
-        //z-index: 2;
         position: absolute;
         top: 36px;
         right: 34px;
@@ -129,6 +128,10 @@ h3{
         height: 760px;
         padding: 75px 0;
         margin: 0 auto;
+        img{
+            width: 500px;
+            height: 333px;
+        }
         .top{
             height: 340px;
             margin-bottom: 90px;
@@ -247,77 +250,77 @@ h3{
     }
     .html {
         h4{
-            margin-top: 40px;
+            margin-top: 25%;
         }
         a{
         @include button(#F1662A);
-        margin-top: 30px;
+        margin-top: 20%;
         }
     }
     .css {
         h4{
-            margin-top: 30px;
+            margin-top: 20%;
         }
         a{
         @include button(#29a9e0);
-        margin-top: 15px;
+        margin-top: 10%;
         }
     }
     .unity {
         h4{
-            margin-top: 50px;
+            margin-top: 35%;
         }
         a{
         @include button(#333);
-        margin-top: 15px;
+        margin-top: 10%;
         }
         img{
-            margin-top: 30px;
+            margin-top: 15%;
         }
     }
     .ruby {
         h4{
-            margin-top: 60px;
+            margin-top: 40%;
         }
         a{
         @include button(#FE5252);
-        margin-top: 15px;
+        margin-top: 10%;
         }
         img{
-            margin-top: 20px;
+            margin-top: 10%;
         }
     }
-    .js {
+    .javascriptCourse {
         h4{
-            margin-top: 30px;
+            margin-top: 20%;
         }
         a{
         @include button(#FCD705);
-        margin-top: 15px;
+        margin-top: 10%;
         }
     }
     .swift {
         h4{
-            margin-top: 60px;
+            margin-top: 35%;
         }
         a{
         @include button(#FE7636);
-        margin-top: 15px;
+        margin-top: 10%;
         }
         img{
-            margin-top: 20px;
+            margin-top: 10%;
         }
     }
     .go {
         h4{
-        margin-top: 50px;
+        margin-top: 30%;
         }
         a{
         @include button(#73CEDD);
-        margin-top: 15px;
+        margin-top: 10%;
         }
         img{
-        margin-top: 20px;
+        margin-top: 15%;
         }
     }
 }
@@ -352,6 +355,7 @@ h3{
     }
     .map{
         width: 600px;
+        height: 400px;
         margin: 0 auto;
     }
 }
@@ -362,4 +366,230 @@ footer{
     text-align: center;
     color: $blue;
     padding: 20px 0;
+}
+
+@media screen and (max-width:480px){
+    /* ここにスマホ版のCSSを書いていくよ */
+
+    //トップ
+    .top-wrapper{
+        width: 100vw;
+        height: 100vh;
+        //background-position:center center;
+        //background-size: cover;
+        //background-repeat: no-repeat;
+        //display: flex;
+        //align-items: center;
+        //justify-content: center;
+        position: relative;
+        //header
+        .header{
+        position: absolute;
+        top: 36px;
+        right: 34px;
+        float: right;
+            nav{
+                display: none;
+            }
+            
+        }
+    img{
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 40%;
+    }
+    h2{
+        font-family: 'Futura';
+        font-weight: 1px;
+        font-size: 20px;
+        color: $white;
+        position: absolute;
+        top: 55%; 
+    }     
+  }
+    h3{
+        text-align: center;
+        font-family: 'FutaraLig';
+        font-size: 30px;
+        color: $blue;
+        margin-top: 55px;
+    }
+
+    //introduction
+    .introduction-wrapper{
+        width: 100vw;
+        height: 200vh;
+        .contents{
+            width: 90%;
+            //height: 760px;
+            //padding: 75px 0;
+            margin: 0 auto;
+            clear: left;
+            .float-left{
+                float: none;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 10%;
+            }
+            .top{
+                width: 100%;
+                //overflow: hidden;
+                //margin-bottom: 90px;
+                .sentence{
+                    width: 80%;
+                    margin: 0 auto;
+                    font-family: "Hiragino Kaku Gothic Pro W3";
+                    font-size: 15px;
+                    color: $black;
+                    padding:0px;
+                }
+                p{
+                line-height: 20px;
+                //margin-bottom: 40px;
+                letter-spacing: -0.8px;
+                }       
+                a{  
+                    display: block;
+                    @include button($blue);
+                    font-size: 20px;
+                    line-height: 78%;
+                    font-family: "Hiragino Kaku Gothic Pro W6";
+                    letter-spacing: 0.7px;
+                }
+            }
+            .buttom{
+                display: flex;
+                .image{
+                    order: 0;
+                }
+                .sentence{
+                    -webkit-box-ordinal-group:1;
+                    -ms-flex-order:1;
+                    -webkit-order:1;
+                    order:1;
+                    width: 80%;
+                    margin: 0 auto;
+                    font-family: "Hiragino Kaku Gothic Pro W3";
+                    font-size: 16px;
+                    color: $black;
+                    padding:0px;
+                    
+                    p{
+                        line-height: 20px;
+                        letter-spacing: -1.6px;
+                        margin-bottom: 40px;
+                        }
+                        a{
+                            display: block;
+                            @include button($yellow);
+                            font-size: 18px;
+                            line-height: 78%;
+                            font-family: "Hiragino Kaku Gothic Pro W6";
+                            letter-spacing: 0.7px;
+                        } 
+                }
+                
+            }            
+        }
+    }
+
+    .courses-wrapper{
+        width: 100vw;
+        height: 220vh;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 0.5px;
+        #particles-js{
+            width: 100%;
+            height: 100%;
+            background-color: #d5e5f8;
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+        }
+        .upside-contents{
+            width: 100%;
+            margin: 0 auto;
+            padding: 76px 0 30px;
+            display: flex;
+            flex-wrap: wrap;
+            .upside{
+                flex-wrap: wrap;
+                flex: 0 0 auto;
+                margin: 0 10px;
+            }
+        }
+        .downside-contents{
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            .downside{
+                flex: 0 0 auto;
+                margin: 0 10px;
+            }
+        }
+        .course{
+            width: 25vw;
+            height: 35vh;
+            padding: 30px;
+            border-radius: 12px;
+            background-color: $white;
+            position: relative;
+            display: inline-block;
+            z-index: 2;
+            margin-bottom: 10%;
+            img{
+                width: 70%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                //padding-bottom: 40px;
+            }
+            h4{ 
+                font-family: "Hiragino Kaku Gothic Pro W6";
+                font-size: 15px;
+                color: $black;
+                text-align: center;
+                //margin-top: 40px;
+                //margin-bottom: 15px;
+            }
+            a{
+                display: block;
+                width: 70%;
+                font-weight: lighter;
+                font-size: 50%;
+                letter-spacing: 0px;
+                position: absolute;
+                bottom: 45px;
+            }
+        }
+        
+    }
+
+    //access
+    .access-wrapper{
+        width: 100vw;
+        height: 70vh;
+        .map {
+            position: relative;
+            width: 100%;
+            padding-top: 10%;
+            overflow:auto; 
+            -webkit-overflow-scrolling:touch;
+            iframe {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100%;
+                height:70%;
+                border:none;
+                display:block;
+            }
+        }
+    }
+      
 }
