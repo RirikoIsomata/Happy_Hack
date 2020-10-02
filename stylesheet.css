@@ -136,7 +136,6 @@ h3 {
 }
 
 .introduction-wrapper .contents .top {
-  height: 340px;
   margin-bottom: 90px;
 }
 
@@ -620,16 +619,20 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .introduction-wrapper .contents .buttom .image {
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .introduction-wrapper .contents .buttom .sentence {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 1;
-    order: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
     width: 80%;
     margin: 0 auto;
     font-family: "Hiragino Kaku Gothic Pro W3";
@@ -679,15 +682,21 @@ footer {
     position: absolute;
     top: 0px;
   }
+  .courses-wrapper .flexbox-margin {
+    margin-top: 10%;
+  }
   .courses-wrapper .upside-contents {
     width: 100%;
     margin: 0 auto;
-    padding: 76px 0 30px;
+    padding: 10% 0 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .courses-wrapper .upside-contents .upside {
     -ms-flex-wrap: wrap;
@@ -705,12 +714,20 @@ footer {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .courses-wrapper .downside-contents .downside {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     margin: 0 10px;
+  }
+  .courses-wrapper .downside-contents .downside ::before {
+    display: block;
+    padding-bottom: 10%;
+    content: '';
   }
   .courses-wrapper .course {
     width: 25vw;

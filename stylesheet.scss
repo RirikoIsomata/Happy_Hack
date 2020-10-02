@@ -133,7 +133,7 @@ h3{
             height: 333px;
         }
         .top{
-            height: 340px;
+            //height: 340px;
             margin-bottom: 90px;
             p{
             line-height: 32px;
@@ -462,14 +462,12 @@ footer{
             }
             .buttom{
                 display: flex;
+                flex-direction: column;
                 .image{
-                    order: 0;
+                    order: 1;
                 }
                 .sentence{
-                    -webkit-box-ordinal-group:1;
-                    -ms-flex-order:1;
-                    -webkit-order:1;
-                    order:1;
+                    order:2;
                     width: 80%;
                     margin: 0 auto;
                     font-family: "Hiragino Kaku Gothic Pro W3";
@@ -481,7 +479,7 @@ footer{
                         line-height: 20px;
                         letter-spacing: -1.6px;
                         margin-bottom: 40px;
-                        }
+                    }
                         a{
                             display: block;
                             @include button($yellow);
@@ -510,12 +508,16 @@ footer{
             position: absolute;
             top: 0px;
         }
+        .flexbox-margin{
+            margin-top: 10%;
+        }
         .upside-contents{
             width: 100%;
             margin: 0 auto;
-            padding: 76px 0 30px;
+            padding: 10% 0 30px;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             .upside{
                 flex-wrap: wrap;
                 flex: 0 0 auto;
@@ -527,10 +529,17 @@ footer{
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             .downside{
                 flex: 0 0 auto;
                 margin: 0 10px;
+                ::before {
+                    display: block;
+                    padding-bottom: 10%;
+                    content: '';
+                }
             }
+           
         }
         .course{
             width: 25vw;
